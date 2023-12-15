@@ -9,10 +9,9 @@
      ios_config:
        parents: ip access-list extended REQ2
        lines:
-         - permit icmp 192.168.20.0 0.0.0.255 host 192.168.30.30 eq echo-reply
+         - permit icmp 192.168.20.0 0.0.0.255 host 192.168.30.30 echo-reply
          - deny icmp any any eq echo
          - permit ip any any
-         - deny ip any any
          
    - name: Apply new ACL to R1 Eth0/0 out
      ios_config:
