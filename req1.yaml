@@ -20,7 +20,7 @@
 
    - name: Check result
      ios_command:
-       commands: sh run | begin line vty 0 4
+       commands: sh ip access-lists REQ1
      register: result
      tags: show
 
