@@ -9,7 +9,7 @@
      ios_config:
        parents: ip access-list extended REQ2
        lines:
-         - deny tcp any any eq icmp
+         - deny icmp
          - permit ip any any
          
    - name: Apply new ACL to R1 Eth0/0 out
