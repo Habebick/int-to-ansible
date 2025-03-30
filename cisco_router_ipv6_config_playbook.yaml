@@ -1,4 +1,4 @@
-- hosts: KK-C3750
+- hosts: R1
   gather_facts: no
 
   tasks:
